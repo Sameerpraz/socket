@@ -33,7 +33,7 @@ ALLOWED_HOSTS = []
 
 
 # Application definition
-INSTALLED_APPS = ['src.first_app', 'src.chat']
+INSTALLED_APPS = ['src.chat']
 
 THIRD_PARTY_LIBRARY = ['channels','selenium']
 
