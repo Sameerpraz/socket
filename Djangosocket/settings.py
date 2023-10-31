@@ -131,7 +131,11 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
-STATIC_URL = '/static/'
+STATIC_URL = 'src/static/'
+
+STATICFILES_DIRS = (
+    os.path.join(BASE_DIR, 'src', "static"),
+)
 
 ASGI_APPLICATION = 'Djangosocket.asgi.application'
 CHANNEL_LAYERS = {
@@ -142,3 +146,5 @@ CHANNEL_LAYERS = {
         },
     },
 }
+
+
